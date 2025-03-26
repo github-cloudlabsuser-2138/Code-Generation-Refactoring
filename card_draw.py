@@ -1,15 +1,15 @@
-# Intentionally flawed Python program
+# Python program to draw five random cards from a deck
 
-# importing modules
-import itertools, random
+import itertools
+import random
 
-# make a deck of cards
-deck = list(itertools.product(range(1,14),['Spade','Heart','Diamond','Club'])
+# Create a deck of cards
+deck = list(itertools.product(range(1, 14), ['Spade', 'Heart', 'Diamond', 'Club']))
 
-# shuffle the cards
+# Shuffle the cards
 random.shuffle(deck)
 
-# draw five cards
+# Draw five cards
 print("You got:")
-for i in range(5)
-   print(deck[i][0], "of", deck[i][1]
+for i in range(5):
+    print(f"{deck[i][0]} of {deck[i][1]}")
