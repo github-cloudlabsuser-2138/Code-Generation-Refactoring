@@ -23,6 +23,11 @@ function divide(a, b) {
     return a / b;
 }
 
+// Function to calculate the power of a number
+function pow(a, b) {
+    return Math.pow(a, b);
+}
+
 // Prompt user for input and operation
 function calculator() {
     const num1 = parseFloat(prompt("Enter the first number:"));
@@ -43,6 +48,9 @@ function calculator() {
         case "divide":
             result = divide(num1, num2);
             break;
+        case "pow":
+                result = pow(num1, num2);
+                break;
         default:
             result = "Invalid operation";
     }
